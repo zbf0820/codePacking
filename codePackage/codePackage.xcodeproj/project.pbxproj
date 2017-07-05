@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A424B2F1F0CB34D002EF9F4 /* UIColor+BFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B2E1F0CB34D002EF9F4 /* UIColor+BFColor.m */; };
 		0A424B331F0CB5C7002EF9F4 /* UINavigationController+BFPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B321F0CB5C7002EF9F4 /* UINavigationController+BFPush.m */; };
+		0A424B371F0CBA39002EF9F4 /* BFFTPUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B361F0CBA39002EF9F4 /* BFFTPUpload.m */; };
 		0A7BF7581F0A32FC00AB87E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BF7571F0A32FC00AB87E3 /* main.m */; };
 		0A7BF75B1F0A32FC00AB87E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BF75A1F0A32FC00AB87E3 /* AppDelegate.m */; };
 		0A7BF75E1F0A32FC00AB87E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7BF75D1F0A32FC00AB87E3 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 		0A424B2E1F0CB34D002EF9F4 /* UIColor+BFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFColor.m"; sourceTree = "<group>"; };
 		0A424B311F0CB5C7002EF9F4 /* UINavigationController+BFPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BFPush.h"; sourceTree = "<group>"; };
 		0A424B321F0CB5C7002EF9F4 /* UINavigationController+BFPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BFPush.m"; sourceTree = "<group>"; };
+		0A424B351F0CBA39002EF9F4 /* BFFTPUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFFTPUpload.h; sourceTree = "<group>"; };
+		0A424B361F0CBA39002EF9F4 /* BFFTPUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFFTPUpload.m; sourceTree = "<group>"; };
 		0A7BF7531F0A32FC00AB87E3 /* codePackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codePackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7BF7571F0A32FC00AB87E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A7BF7591F0A32FC00AB87E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +105,15 @@
 			name = NavigationController;
 			sourceTree = "<group>";
 		};
+		0A424B341F0CBA1E002EF9F4 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				0A424B351F0CBA39002EF9F4 /* BFFTPUpload.h */,
+				0A424B361F0CBA39002EF9F4 /* BFFTPUpload.m */,
+			);
+			name = FTP;
+			sourceTree = "<group>";
+		};
 		0A7BF74A1F0A32FC00AB87E3 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 		0A7BF7551F0A32FC00AB87E3 /* codePackage */ = {
 			isa = PBXGroup;
 			children = (
+				0A424B341F0CBA1E002EF9F4 /* FTP */,
 				0A424B301F0CB5A5002EF9F4 /* NavigationController */,
 				0A424B2C1F0CB2EA002EF9F4 /* color */,
 				0A7BF7591F0A32FC00AB87E3 /* AppDelegate.h */,
@@ -306,6 +319,7 @@
 				0A7BF75E1F0A32FC00AB87E3 /* ViewController.m in Sources */,
 				0A7BF75B1F0A32FC00AB87E3 /* AppDelegate.m in Sources */,
 				0A7BF7581F0A32FC00AB87E3 /* main.m in Sources */,
+				0A424B371F0CBA39002EF9F4 /* BFFTPUpload.m in Sources */,
 				0A424B331F0CB5C7002EF9F4 /* UINavigationController+BFPush.m in Sources */,
 				0A424B2F1F0CB34D002EF9F4 /* UIColor+BFColor.m in Sources */,
 			);
