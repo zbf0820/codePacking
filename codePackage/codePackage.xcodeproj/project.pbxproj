@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2330831F0F574600B04F46 /* UIView+BFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2330821F0F574600B04F46 /* UIView+BFExtension.m */; };
 		0A424B2F1F0CB34D002EF9F4 /* UIColor+BFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B2E1F0CB34D002EF9F4 /* UIColor+BFColor.m */; };
 		0A424B331F0CB5C7002EF9F4 /* UINavigationController+BFPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B321F0CB5C7002EF9F4 /* UINavigationController+BFPush.m */; };
 		0A424B371F0CBA39002EF9F4 /* BFFTPUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A424B361F0CBA39002EF9F4 /* BFFTPUpload.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2330811F0F574600B04F46 /* UIView+BFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BFExtension.h"; sourceTree = "<group>"; };
+		0A2330821F0F574600B04F46 /* UIView+BFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BFExtension.m"; sourceTree = "<group>"; };
 		0A424B2D1F0CB34D002EF9F4 /* UIColor+BFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFColor.h"; sourceTree = "<group>"; };
 		0A424B2E1F0CB34D002EF9F4 /* UIColor+BFColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFColor.m"; sourceTree = "<group>"; };
 		0A424B311F0CB5C7002EF9F4 /* UINavigationController+BFPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BFPush.h"; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A23307D1F0F56F300B04F46 /* UIview封装 */ = {
+			isa = PBXGroup;
+			children = (
+				0A2330811F0F574600B04F46 /* UIView+BFExtension.h */,
+				0A2330821F0F574600B04F46 /* UIView+BFExtension.m */,
+			);
+			name = "UIview封装";
+			sourceTree = "<group>";
+		};
 		0A424B2C1F0CB2EA002EF9F4 /* color */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 		0A7BF7551F0A32FC00AB87E3 /* codePackage */ = {
 			isa = PBXGroup;
 			children = (
+				0A23307D1F0F56F300B04F46 /* UIview封装 */,
 				0A424B341F0CBA1E002EF9F4 /* FTP */,
 				0A424B301F0CB5A5002EF9F4 /* NavigationController */,
 				0A424B2C1F0CB2EA002EF9F4 /* color */,
@@ -317,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A7BF75E1F0A32FC00AB87E3 /* ViewController.m in Sources */,
+				0A2330831F0F574600B04F46 /* UIView+BFExtension.m in Sources */,
 				0A7BF75B1F0A32FC00AB87E3 /* AppDelegate.m in Sources */,
 				0A7BF7581F0A32FC00AB87E3 /* main.m in Sources */,
 				0A424B371F0CBA39002EF9F4 /* BFFTPUpload.m in Sources */,
