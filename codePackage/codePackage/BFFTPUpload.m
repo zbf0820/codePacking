@@ -26,11 +26,11 @@
 -(uint8_t *)buffer{
     return self->_buffer;
 }
--(void)uploadFtp{
+-(void)uploadFtp:(NSString *)filePath{
     //为url添加后缀
-    self.url = CFBridgingRelease(CFURLCreateCopyAppendingPathComponent(NULL, (CFURLRef)self.url, (CFStringRef)[self.filePath lastPathComponent], false));
+    self.url = CFBridgingRelease(CFURLCreateCopyAppendingPathComponent(NULL, (CFURLRef)self.url, (CFStringRef)[filePath lastPathComponent], false));
     //读取文件转化为输入流
-    self.fileStream = [NSInputStream inputStreamWithFileAtPath:self.filePath];
+    self.fileStream = [NSInputStream inputStreamWithFileAtPath:filePath];
     [self.fileStream open];
     //为url开启CFFTPStream输出流
     CFWriteStreamRef ftpStream = CFWriteStreamCreateWithFTPURL(NULL, (__bridge CFURLRef)self.url);
@@ -44,6 +44,15 @@
     [self.networkStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [self.networkStream open];
 }
+-(void)uploadFtpMoreFiles{
+    [self uploadFtp:self.filePaths[0]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(InfoNotificationAction:) name:@"ftp" object:nil];
+}
+- (void)InfoNotificationAction:(NSNotification *)notification{
+    i++;
+    [self uploadFtp:self.filePaths[i]];
+}
+
 - (void)stream:(NSStream *)aStream handleEvent:(NSStreamEvent)eventCode
 {
     //aStream 即为设置为代理的networkStream
